@@ -79,6 +79,8 @@ videoContainer.innerHTML=`
         <h2 class="text-2xl font-bold">Oops!! Sorry, There is no videos to show</h2>
         </div>
         `
+
+        hideLoader();
   return;
 }
 
