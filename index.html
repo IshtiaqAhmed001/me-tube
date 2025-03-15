@@ -6,6 +6,14 @@
     <title>ME-Tube</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+    .active{
+    background:#FF1F3D;
+    color:white;
+}
+</style>
+
 </head>
 <body>
     <header>
@@ -24,12 +32,17 @@
 
     <nav id="category-container" class="flex py-5 justify-center gap-5">
         <div>
-            <button onclick="loadVideos()" class="btn btn-sm btn bg-[#FF1F3D] text-white">All</button>
+            <button onclick="loadVideos()" id="btn-all" class="btn btn-sm btn">All</button>
         </div>
     </nav>
 
     <section id="video-container" class="w-11/12 mx-auto grid grid-cols-4 gap-5">
        
+
+        <div class="py-20 col-span-full text-center flex justify-center flex-col items-center">
+            <img class="w-[120px]" src="./assets/Icon.png" alt="">
+        <h2 class="text-2xl font-bold">Oops!! Sorry, There is no videos to show</h2>
+        </div>
     </section>
 
 
