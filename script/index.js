@@ -38,6 +38,7 @@ function loadVideos(searchText=''){
 }
 
 const loadCategoryVideos =(id)=>{
+  showLoader();
 const url=`https://openapi.programming-hero.com/api/phero-tube/category/${id}`
 
 fetch(url)
